@@ -9,11 +9,11 @@ class Taxonomy(models.Model):
     type = models.CharField(max_length=20)
     description = models.TextField(blank=True)
 
-    def __unicode__(self):
-        return self.name
-
     class Meta:
 	    verbose_name_plural = 'taxonomies'
+
+    def __unicode__(self):
+        return self.name
 
 class Content(models.Model):
     title = models.CharField(max_length=160)
