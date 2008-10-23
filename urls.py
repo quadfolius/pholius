@@ -29,5 +29,5 @@ urlpatterns = patterns('',
     (r'^authors/(?P<author_slug>\w+)/$', 'pholius.core.views.author'),
     #static page urls
     (r'^(?P<page_slug>\w+)/$', 'pholius.core.views.page'),
-
+    (r'^search/(?P<search_query>\S+)/$', 'pholius.core.views.search'),
 )
